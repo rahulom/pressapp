@@ -1,0 +1,43 @@
+<ion-view >
+    <ion-content>
+
+        <div class="list card details" >
+            <div >
+                <div class="item item-avatar ">
+                    <img ng-src="{{p.userpic}}">
+                    <h2 ng-bind="p.fullname"></h2>
+                    <div id="textbox">
+                        <p class="alignleft color_red" ng-bind="p.locationname"></p>
+                        <p class="alignright" ng-bind="p.created"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-body padding-none">
+                <img ng-if="p.thumbnail" class="full-image" ng-src="{{p.thumbnail}}">
+                <h2 class="color_red" ng-bind="p.title" > </h2>
+                <p ng-bind="p.description" > </p>
+            </div>
+            <div class="button-bar">
+                <a class="button icon ion-camera" ng-click="showmessage();">&nbsp;({{p.attachments.images.length}})</a>
+                <a class="button icon ion-ios-videocam" ng-click="showmessage();">&nbsp;({{p.attachments.videos.length}})</a>
+                <a class="button icon ion-ios-mic" ng-click="showmessage();">&nbsp;({{p.attachments.audios.length}})</a>
+                <a class="button icon ion-paperclip" ng-click="showmessage();">&nbsp;({{p.attachments.docs.length}})</a>
+            </div>
+             <div class="button-bar">
+                 <a class="button icon " ng-click="showmessage();"><img width="28px" src="img/ldpi.png">({{p.likes}})</a>
+                    <a class="button icon ion-eye" ng-click="showmessage();">&nbsp;({{p.views}})</a>
+                    <a class="button icon ion-android-textsms" ng-click="showmessage();">&nbsp;({{p.commentscount}})</a>
+                    <a class="button icon ion-android-share-alt" ng-click="showmessage();">&nbsp;({{p.share}})</a>
+             </div>
+        </div>
+       <div class="list">
+           <p>&nbsp;&nbsp;Comments and Support</p>
+           <a ng-repeat="c in loadcomments()" class="item item-avatar"  href="#">
+      <img ng-src="{{c.displaypic}}">
+      <h2 ng-bind="c.username"></h2>
+      <p class="wrap" ng-bind="c.w_comment"></p>
+    </a>
+
+</div>
+    </ion-content>
+</ion-view>

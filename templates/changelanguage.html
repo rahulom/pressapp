@@ -1,0 +1,10 @@
+<ion-view view-title="{{ 'changelanguage' | translate }}">
+  <ion-content>
+      <ul class="list">
+          <li class="item" ng-repeat="x in languages">
+           <a ng-bind="x.value" ng-click="changeLanguage(x.key)" ></a>
+             <i class="icon ion-checkmark" ng-if="x.key==slang" ></i>
+    </li>
+</ul>
+  </ion-content>
+</ion-view>
