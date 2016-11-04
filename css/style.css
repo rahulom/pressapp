@@ -1,0 +1,125 @@
+[nav-bar-transition="ios"] [nav-bar="active"] .bar, [nav-bar-transition="ios"] [nav-bar="entering"] .bar,[nav-bar-transition="android"] [nav-bar="active"] .bar {
+    background: #7791E7 !important;
+}
+
+.tabs-top > .tabs, .tabs.tabs-top{
+        background: #7791E7  !important;
+}
+.bar-stable .button,.bar-stable .button.button-clear {
+    color: #f8f8f8  !important;
+}
+.tabs-icon-top > .tabs .tab-item{
+    font-size: 15px;
+        padding-top: 10px;
+    max-width:45%; 
+}
+.tabs-top.tabs-striped .tab-item.tab-item-active {
+    border-bottom:1px solid #D64080 !important;
+}
+.padding-top{
+     margin-top: 82px;
+}
+.item-thumbnail-left img{
+    max-height: 44px !important;max-width: 44px !important;
+}
+.item-avatar > img:first-child{
+    border-radius: 0px;
+}
+.card .item:last-child{
+    right:12px;
+}
+.col {
+padding: 0px;
+}
+.card {
+  width: 100%;
+}
+.padding-none{
+    padding: 0px !important;
+}
+.color_red{
+    color:#FB2D65 !important;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.item-body p,.item-body a {
+    padding-left: 16px;
+}
+.button-bar > .button {
+    background: none;
+}
+.details .item-body p,.details .item-body a,.details .item-body h2 {
+    padding-left: 6px;
+    margin-right: 6px;
+}
+.item p.wrap {
+    overflow: visible;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}
+.button-bar > .button{
+    overflow: no-content;
+}
+.bar.bar-stable{
+    background-color: #7791e7  !important;
+}
+.my-side-menu,.item-complex .item-content{
+ background: #7791e7;
+}
+ 
+.my-list-item{
+ background-color: #7791e7 !important;
+ color:#fff !important;
+ border:#564545 !important;
+}
+.searchBar {
+	color: #fff;
+	margin: 0 !important;
+	padding: 0;
+}
+.searchBar .icon {
+	font-size: 27px;
+	line-height: 1.2;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.searchBar .searchTxt {
+	border-bottom: 1px solid #fff;
+	left: 55px;
+	width: calc(100% - 100px);
+	position: fixed;
+	height: calc(100% - 10px);
+}
+.searchBar.numicons2 .searchTxt {
+	width: calc(100% - 135px);
+}
+.searchBar .searchTxt > .bgdiv {
+	background-color: #aaa;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 0.3;
+}
+.searchBar .searchTxt > .bgtxt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.searchBar .searchTxt input {
+	background-color: inherit;
+	color: #fff;
+	padding-left: 5px;
+	padding-right:5px;
+}
+.bar .title + .buttons{
+    top:0px;
+}
+.center{
+     text-align:center;
+}
